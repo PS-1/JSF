@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import javax.faces.bean.*;
 import javax.faces.event.ValueChangeEvent;
+//Dies ist ein Test 
 
 /* Hier soll mit Annotationen die LoginBean unter dem Namen "loginBean" dem JSF-Framework bekannt gemacht werden
  *  und festgelegt werden, dass eine Instanz dieser Bean für eine ganze Sitzung besteht */
