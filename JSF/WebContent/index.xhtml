@@ -19,19 +19,13 @@ transitional.dtd">
 		<h:outputStylesheet name="bootstrap/css/bootstrap.css" />
 
 		<!-- intergrate AminLTE-template -->
-		<h:outputStylesheet name="adminlte/css/AdminLTE.min.css" />
+		<h:outputStylesheet name="adminlte/css/AdminLTE.css" />
 		<h:outputStylesheet name="adminlte/css/skins/_all-skins.min.css" />
 
 		<!-- Font Awesome -->
 		<h:outputStylesheet name="font-awesome.min.css" library="css" />
-
-		<!-- jQuery -->
-		<h:outputScript name="jquery.min.js" library="js" />
-
-		<!-- bootstrap javascript -->
-		<h:outputScript name="bootstrap/js/bootstrap.js" />
+		
 	</f:facet>
-
 	<f:facet name="last">
 	</f:facet>
 
@@ -248,7 +242,7 @@ transitional.dtd">
 		<!-- /aside -->
 
 		<!-- Content Wrapper. Contains page content -->
-		<div class="	">
+		<div class="content-wrapper">
 			<!-- Content Header (Page header) -->
 			<div class="content-header">
 				<h1>
@@ -262,7 +256,6 @@ transitional.dtd">
 
 			<!-- Main content -->
 			<div class="content">
-
 				<div>
 					<h3>Herzlich willkommen!!!</h3>
 					<h:form>
@@ -295,8 +288,32 @@ transitional.dtd">
 			<!-- /.content -->
 		</div>
 		<!-- /.content-wrapper -->
+		
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			<!-- To the right -->
+			<div class="pull-right hidden-xs">Anything you want</div>
+			<!-- Default to the left -->
+			<strong>Copyright &copy; 2016 <a href="#">Company</a>.
+			</strong> All rights reserved.
+		</footer>
 
 	</div>
 	<!-- /.wrapper -->
+	
+	<!-- REQUIRED JS SCRIPTS -->
+
+	<!-- jQuery -->
+	<h:outputScript name="jquery.min.js" library="js" />
+	<!-- Bootstrap 3.3.6 -->
+	<h:outputScript name="bootstrap.js" library="bootstrap/js/"/>
+	<!-- AdminLTE App -->
+	<h:outputScript name="app.min.js" library="adminlte/js"/>
+
+	<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+	
 </h:body>
 </html>
