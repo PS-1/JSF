@@ -20,7 +20,7 @@ body {
 }
 body {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /*-moz-osx-font-smoothing: grayscale;*/
   font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   overflow-x: hidden;
@@ -217,6 +217,7 @@ a:focus {
   border-color: rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.9);
 }
+/*
 .main-header #navbar-search-input.form-control::-moz-placeholder {
   color: #ccc;
   opacity: 1;
@@ -227,6 +228,7 @@ a:focus {
 .main-header #navbar-search-input.form-control::-webkit-input-placeholder {
   color: #ccc;
 }
+*/
 .main-header .navbar-custom-menu,
 .main-header .navbar-right {
   float: right;
@@ -1256,17 +1258,21 @@ a:focus {
   border-color: #3c8dbc;
   box-shadow: none;
 }
+/*
 .form-control::-moz-placeholder,
 .form-control:-ms-input-placeholder,
 .form-control::-webkit-input-placeholder {
   color: #bbb;
   opacity: 1;
 }
+*/
+/*
 .form-control:not(select) {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
+*/
 .form-group.has-success label {
   color: #00a65a;
 }
@@ -1413,52 +1419,62 @@ a:focus {
 .progress-bar-primary {
   background-color: #3c8dbc;
 }
+/*
 .progress-striped .progress-bar-light-blue,
 .progress-striped .progress-bar-primary {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
+*/
 .progress-bar-green,
 .progress-bar-success {
   background-color: #00a65a;
 }
+/*
 .progress-striped .progress-bar-green,
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
+*/
 .progress-bar-aqua,
 .progress-bar-info {
   background-color: #00c0ef;
 }
+/*
 .progress-striped .progress-bar-aqua,
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
+*/
 .progress-bar-yellow,
 .progress-bar-warning {
   background-color: #f39c12;
 }
+/*
 .progress-striped .progress-bar-yellow,
 .progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
+*/
 .progress-bar-red,
 .progress-bar-danger {
   background-color: #dd4b39;
 }
+/*
 .progress-striped .progress-bar-red,
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
+*/
 /*
  * Component: Small Box
  * --------------------
@@ -2200,13 +2216,13 @@ a:focus {
 .btn.btn-flat {
   border-radius: 0;
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
+  /*-moz-box-shadow: none;*/
   box-shadow: none;
   border-width: 1px;
 }
 .btn:active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  /*-moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);*/
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .btn:focus {
@@ -2225,7 +2241,7 @@ a:focus {
   font-size: 100px;
   text-align: right;
   opacity: 0;
-  filter: alpha(opacity=0);
+  /*filter: alpha(opacity=0);*/
   outline: none;
   background: white;
   cursor: inherit;
@@ -2332,7 +2348,7 @@ a:focus {
 .btn-app:active,
 .btn-app:focus {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  /*-moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);*/
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .btn-app > .badge {
@@ -2398,11 +2414,11 @@ a:focus {
 .alert .close {
   color: #000;
   opacity: 0.2;
-  filter: alpha(opacity=20);
+  /*filter: alpha(opacity=20);*/
 }
 .alert .close:hover {
   opacity: 0.5;
-  filter: alpha(opacity=50);
+  /*filter: alpha(opacity=50);*/
 }
 .alert a {
   color: #fff;
@@ -4229,8 +4245,10 @@ table.text-center th {
 }
 .select2-results__option {
   padding: 6px 12px;
+  /*
   user-select: none;
   -webkit-user-select: none;
+  */
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
   padding-left: 0;
@@ -4526,7 +4544,7 @@ table.text-center th {
 }
 [class^="bg-"].disabled {
   opacity: 0.65;
-  filter: alpha(opacity=65);
+  /*filter: alpha(opacity=65);*/
 }
 .text-red {
   color: #dd4b39 !important;
@@ -4637,6 +4655,7 @@ table.text-center th {
   width: auto !important;
   height: auto !important;
 }
+/*
 .bg-teal-gradient {
   background: #39cccc !important;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #39cccc), color-stop(1, #7adddd)) !important;
@@ -4727,6 +4746,7 @@ table.text-center th {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e73f7c', endColorstr='#d81b60', GradientType=0) !important;
   color: #fff;
 }
+*/
 .description-block .description-icon {
   font-size: 16px;
 }
@@ -4871,11 +4891,11 @@ table.text-center th {
 }
 .full-opacity-hover {
   opacity: 0.65;
-  filter: alpha(opacity=65);
+  /*filter: alpha(opacity=65);*/
 }
 .full-opacity-hover:hover {
   opacity: 1;
-  filter: alpha(opacity=100);
+  /*filter: alpha(opacity=100);*/
 }
 .chart {
   position: relative;
