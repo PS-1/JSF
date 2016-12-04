@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-
+transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<!-- facelets sind für den view zuständig -->
+<h:head>
+
+	<f:facet name="first">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>JSF</title>
+	</f:facet>
+	<f:facet name="middle">
+		<!-- boostrap style -->
+		<h:outputStylesheet name="bootstrap/css/bootstrap.css" />
+
+		<!-- intergrate AminLTE-template -->
+		<h:outputStylesheet name="adminlte/css/AdminLTE.css" />
+		<h:outputStylesheet name="adminlte/css/skins/_all-skins.min.css" />
+
+		<!-- Font Awesome -->
+		<h:outputStylesheet name="font-awesome.min.css" library="css" />
+
+	</f:facet>
+	<f:facet name="last">
+	</f:facet>
+
+</h:head>
+<h:body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<ui:insert name="header">
+			<ui:include src="partials/header.xhtml" />
+		</ui:insert>
+
+		<!-- Left side column. contains the logo and sidebar -->
+		<div class="main-sidebar" style="display: block;">
+
+			<!-- sidebar: style can be found in sidebar.less -->
+			<div class="sidebar" style="display: block;">
+				<!-- Sidebar user panel (optional) -->
+				<div class="user-panel">
+					<div class="pull-left image">
+						<h:graphicImage library="images" name="user2-160x160.jpg"
+							alt="User Image" class="img-circle" />
+					</div>
+					<div class="pull-left info">
+						<p>Alexander Pierce</p>
+						<!-- Status -->
+						<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+					</div>
+				</div>
+
+				<!-- search form (Optional) -->
+				<form action="#" method="get" class="sidebar-form">
+					<div class="input-group">
+						<input type="text" name="q" class="form-control" /> <span
+							class="input-group-btn">
+							<button type="submit" name="search" id="search-btn"
+								class="btn btn-flat">
+								<i class="fa fa-search"></i>
+							</button>
+						</span>
+					</div>
+				</form>
+				<!-- /.search form -->
+				<!-- Sidebar Menu -->
+				<ul class="sidebar-menu">
+					<li class="header">HEADER</li>
+					<!-- Optionally, you can add icons to the links -->
+					<li class="active"><a href="#"><i class="fa fa-link"></i>
+							<span>Link</span></a></li>
+					<li><a href="#"><i class="fa fa-link"></i> <span>Another
+								Link</span></a></li>
+					<li class="treeview"><a href="#"><i class="fa fa-link"></i>
+							<span>Multilevel</span> <span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+						</span> </a>
+						<ul class="treeview-menu">
+							<li><a href="#"><i class="fa fa-circle-o"></i>Link in
+									level 2</a></li>
+							<li><a href="#"><i class="fa fa-circle-o"></i>Link in
+									level 2</a></li>
+						</ul></li>
+				</ul>
+				<!-- /.sidebar-menu -->
+			</div>
+			<!-- /.sidebar -->
+		</div>
+		<!-- /aside -->
+
+		<ui:insert name="content">
+			<ui:include src="partials/content.xhtml" />
+		</ui:insert>
+
+		<ui:insert name="foooter">
+			<ui:include src="partials/footer.xhtml" />
+		</ui:insert>
+
+	</div>
+	<!-- /.wrapper -->
+
+	<!-- REQUIRED JS SCRIPTS -->
+
+	<!-- jQuery -->
+	<h:outputScript name="jquery.min.js" library="js" />
+	<!-- Bootstrap 3.3.6 -->
+	<h:outputScript name="bootstrap.js" library="bootstrap/js/" />
+	<!-- AdminLTE App -->
+	<h:outputScript name="app.min.js" library="adminlte/js" />
+
+	<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+
+</h:body>
+</html>
