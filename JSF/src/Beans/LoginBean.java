@@ -47,6 +47,8 @@ public class LoginBean implements Serializable {
 	/**/
 	public String login() {
 		String user="", pw = "";
+		
+		//suche in der Liste der gespeichterten Nutzer
 		for(StudentBean student : liste){
 			if(studentBean.getUsername().equals(student.getUsername())){
 				user = student.getUsername();

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import javax.faces.bean.*;
 import javax.validation.constraints.*;
 /* Hier soll mit Annotationen die StudentBean unter dem Namen "studentBean" dem JSF-Framework bekannt gemacht werden
- *  und festgelegt werden, dass eine Instanz dieser Bean f�r eine ganze Sitzung besteht */
+ *  und festgelegt werden, dass eine Instanz dieser Bean fuer eine ganze Sitzung besteht */
 @ManagedBean(name = "studentBean")
 @SessionScoped
 public class StudentBean implements Serializable {
@@ -30,7 +30,7 @@ public class StudentBean implements Serializable {
 		this.password = "pw:"+string;
 	}
 	
-	/* alle n�tigen Methoden einer JavaBean angeben */
+	/* alle noetigen Methoden einer JavaBean angeben */
 	public String getUsername() {
 		return username;
 	}
