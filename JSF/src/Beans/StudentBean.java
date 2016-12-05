@@ -12,6 +12,9 @@ public class StudentBean implements Serializable {
 	private static final long serialVersionUID = 2L;
 	
 	/* alle noetigen Instanzvariablen deklarieren */
+	
+	
+	//Validierung ist auch direkt in h:inputTetxt mit required="true" möglich
 	@NotNull(message="darf nicht leer sein")
 	private String username, password;
 	@NotNull(message="Geschlecht muss angegeben werden")

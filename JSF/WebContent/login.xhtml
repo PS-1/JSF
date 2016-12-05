@@ -33,13 +33,16 @@ transitional.dtd">
 											<td><h:inputText id="username"
 													value="#{loginBean.studentBean.username}"
 													valueChangeListener="#{loginBean.changedUser}" /></td>
-											<td><h:message for="username" style="color:red" /></td>
+											<td>
+												<!-- hier wird die Fehlermedlung zurückgegeben -->
+												<h:message for="username" class="alert alert-danger" />
+											</td>
 										</tr>
 										<tr>
 											<td><h:outputLabel for="age" value="Alter" /></td>
 											<td><h:inputText id="age"
 													value="#{loginBean.studentBean.age}" /></td>
-											<td><h:message for="age" style="color:red" /></td>
+											<td><h:message for="age" class="alert alert-danger" /></td>
 										</tr>
 										<tr>
 											<td>Geschlecht</td>
@@ -49,19 +52,21 @@ transitional.dtd">
 													<f:selectItem itemLabel="weiblich" itemValue="w" />
 													<f:selectItem itemLabel="männlich" itemValue="m" />
 												</h:selectOneRadio></td>
-											<td><h:message for="geschlecht" style="color:red" /></td>
+											<td><h:message for="geschlecht"
+													class="alert alert-danger" /></td>
 										</tr>
 										<tr>
 											<td><h:outputLabel for="password" value="Password" /></td>
 											<td><h:inputSecret id="password"
 													value="#{loginBean.studentBean.password}" /></td>
-											<td><h:message for="password" style="color:red" /></td>
+											<td><h:message for="password"
+													class="alert alert-danger" /></td>
 										</tr>
 										<tr>
 											<td>AGB akzeptieren</td>
 											<td><h:selectBooleanCheckbox id="agb"
 													value="#{loginBean.studentBean.agb}" /></td>
-											<td><h:message for="agb" style="color:red" /></td>
+											<td><h:message for="agb" class="alert alert-danger" /></td>
 										</tr>
 										<tr>
 											<td colspan="2"><h:commandButton value="Login"
