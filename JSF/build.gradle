@@ -1,0 +1,85 @@
+apply plugin: 'java'
+
+task ordnerErstellen {
+	description = 'Erstellt die Ornder-Struktur'
+	doLast {
+	
+		//Pfade definieren
+		def pfad1 = new File('libs')
+		def pfad2 = new File('src/main/java/edu/kit/aifb/prog3Seminar/facebookAnalyser')
+		
+		//Ordner erstellen
+		pfad1.mkdirs()
+		pfad2.mkdirs()
+	}
+}
+
+task kopierenLibs(type: Copy) {
+
+ 	from 'vorlage'
+ 	include '*.jar'
+	into 'libs'
+
+	//Abhängigkeit
+	dependsOn ordnerErstellen
+}
+
+task kopierenJava(type: Copy) {
+
+ 	from 'vorlage'
+ 	include '*.java'
+	into 'src/main/java/edu/kit/aifb/prog3Seminar/facebookAnalyser'
+	
+	//Abhängigkeit
+	dependsOn ordnerErstellen
+}
+
+task setup(type: Delete) {
+	
+	delete 'vorlage'
+
+	//Abhängigkeit
+	dependsOn kopierenLibs, kopierenJava
+}
+
+//definiert woher die dependencies kommen
+repositories {
+	//Repository Maven Central f�r JSoup
+	mavenCentral()
+	//Libs Verzeichnis f�r JHeatChart
+	flatDir {
+		dirs 'libs'
+	}
+ }
+ 
+ //definiert welche dependencies geladen werden sollen
+ dependencies{
+ 
+ 	// https://mvnrepository.com/artifact/org.jsoup/jsoup
+	compile group: 'org.jsoup', name: 'jsoup', version: '1.10.1'
+	
+	//jheatchart
+	compile name: 'jheatchart', version: '0.6'
+ }
+ 
+jar {
+	manifest {
+    	attributes(
+    		'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+    		'Main-Class': 'edu.kit.aifb.prog3Seminar.facebookAnalyser.Main'
+    	)
+	}
+}
+
+task fatJar(type: Jar) {
+    description = 'Erstellt Jar mit externen Jars'
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest {
+      attributes(
+        'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+        'Main-Class': 'edu.kit.aifb.prog3Seminar.facebookAnalyser.Main'
+      )
+    }
+    with jar
+}
