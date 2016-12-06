@@ -34,15 +34,15 @@ transitional.dtd">
 													value="#{loginBean.studentBean.username}"
 													valueChangeListener="#{loginBean.changedUser}" /></td>
 											<td>
-												<!-- hier wird die Fehlermedlung zurückgegeben -->
-												<h:message for="username" class="alert alert-danger" />
+												<!-- hier wird die Fehlermedlung zurückgegeben --> <h:message
+													for="username" class="alert alert-danger alert-box" />
 											</td>
 										</tr>
 										<tr>
 											<td><h:outputLabel for="age" value="Alter" /></td>
 											<td><h:inputText id="age"
 													value="#{loginBean.studentBean.age}" /></td>
-											<td><h:message for="age" class="alert alert-danger" /></td>
+											<td><h:message for="age" class="alert alert-danger alert-box" /></td>
 										</tr>
 										<tr>
 											<td>Geschlecht</td>
@@ -53,24 +53,24 @@ transitional.dtd">
 													<f:selectItem itemLabel="männlich" itemValue="m" />
 												</h:selectOneRadio></td>
 											<td><h:message for="geschlecht"
-													class="alert alert-danger" /></td>
+													class="alert alert-danger alert-box" /></td>
 										</tr>
 										<tr>
 											<td><h:outputLabel for="password" value="Password" /></td>
 											<td><h:inputSecret id="password"
 													value="#{loginBean.studentBean.password}" /></td>
-											<td><h:message for="password"
-													class="alert alert-danger" /></td>
+											<td><h:message for="password" class="alert alert-danger alert-box" /></td>
 										</tr>
 										<tr>
 											<td>AGB akzeptieren</td>
 											<td><h:selectBooleanCheckbox id="agb"
 													value="#{loginBean.studentBean.agb}" /></td>
-											<td><h:message for="agb" class="alert alert-danger" /></td>
+											<td><h:message for="agb" class="alert alert-danger alert-box" /></td>
 										</tr>
 										<tr>
-											<td colspan="2"><h:commandButton value="Login"
+											<td colspan="2"><h:commandButton id="button" value="Login" binding="#{loginBean.button}"
 													action="#{loginBean.login}" /></td>
+													<td><h:message for="button" class="alert alert-danger alert-box" /></td>
 										</tr>
 									</h:form>
 								</table>

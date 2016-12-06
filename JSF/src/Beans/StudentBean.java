@@ -19,7 +19,7 @@ public class StudentBean implements Serializable {
 	private String username, password;
 	@NotNull(message="Geschlecht muss angegeben werden")
 	private String geschlecht;	
-	@AssertTrue(message="AGB m�ssen akzeptiert werden")
+	@AssertTrue(message="AGB muessen akzeptiert werden")
 	private boolean agb;
 	private boolean angemeldet;
 	@NotNull(message="darf nicht leer sein")
