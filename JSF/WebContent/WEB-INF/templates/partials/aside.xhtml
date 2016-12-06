@@ -23,9 +23,20 @@ transitional.dtd">
 							alt="User Image" class="img-circle" />
 					</div>
 					<div class="pull-left info">
-						<p>Alexander Pierce</p>
+						<p>
+							<h:outputText value="#{loginBean.studentBean.username}"
+								rendered="#{loginBean.studentBean.angemeldet}" />
+						</p>
 						<!-- Status -->
-						<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+						<a href="#"> <h:panelGroup
+								rendered="#{loginBean.studentBean.angemeldet}">
+								<!-- online -->
+								<i class="fa fa-circle text-success"></i> Online
+						</h:panelGroup> <h:panelGroup rendered="#{!loginBean.studentBean.angemeldet}">
+								<!-- offline -->
+								<i class="fa fa-circle text-danger"></i> Offline
+						</h:panelGroup>
+						</a>
 					</div>
 				</div>
 
